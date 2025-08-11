@@ -1,0 +1,12 @@
+{
+    "python.defaultInterpreterPath": "<path to your outside venv Python>",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "ruff.enable": true,
+    "ruff.lint.onSave": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindowMode": "perFile",
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
+}

@@ -1,0 +1,219 @@
+---
+title: "CSCI 3003 - Data Visualization"
+subtitle: "Fall 2024"
+output:
+  pdf_document:
+    number_sections: yes
+    toc: no
+  html_document:
+    number_sections: yes
+    theme: spacelab
+    toc: yes
+    toc_float: yes
+urlcolor: blue
+---
+
+```{r setup3, include=FALSE, echo=F}
+knitr::opts_chunk$set(echo = FALSE)
+options(kableExtra.auto_format = FALSE)
+require('knitr')
+require('dplyr')
+require('readxl') 
+require('kableExtra')
+
+options(knitr.kable.NA = '')
+#setwd("~/Dropbox/USAO/~MATH 2203/Syllabus")
+```
+
+\vspace{-20pt}
+
+|                   |                                                      |            |                        |
+|:----------------|:---------------------|:----------------|:----------------|
+| **Instructor:**   | Dr. Paul Regier                                      | **Time:**  | Mon/Wed 11:15 am - 12:15 pm |
+| **Email:**        | [pregier\@usao.edu](mailto:pregier@usao.edu){.email} | **Place:** | Austin Hall 212        |
+| **Office hours:** | [paulregier.com/office-hours/](https://paulregier.com/office-hours/)                                    |            |                        |
+
+
+# Course Description
+
+This course covers the basics of data visualization and exploratory data analysis. (3 hours)  
+
+**Prerequisite:** MATH 2203 Elementary Statistics
+
+## Materials
+
+1. **Personal Computer or regular access to USAO computer lab**. If you choose to use your own computer, please install the following software (free) before our first meeting or as soon as you can:
+    * [Download and install 'R'](https://cran.r-project.org/)
+    * [Download and install *Desktop RStudio*](https://rstudio.com/products/rstudio/download/) (choose the free version) 
+2. **Optional Textbook**: [Creating More Effective Graphs](https://www.amazon.com/Creating-Effective-Graphs-Naomi-Robbins/dp/0985911123), by Naomi B. Robbins. Charter House.
+    * ISBN-10 : 0985911123
+    * ISBN-13 : 978-0985911126
+    
+**Note regarding RStudio software:**
+
+  * To work on labs and exam material out of class, you need to either have 'R' and *RStudio* installed on your personal computer OR arrange access to a computer with R and RStudio installed. (R and RStudio are installed on the 24-hour computer lab in the library.)
+  * If you are unable to install 'R' and *RStudio* on your personal computer or find regular access to USAO lab computers with RStudio, there is a *browser-based option* for running *RStudio* called [*RStudio Cloud*](https://rstudio.com/products/rstudio/download/), which is free for up to 25 hours/month. After that you can pay costs $5/month. You may discuss this with me if you are considering this option.
+
+## Technical Skills Needed
+
+1. Ability to navigate and use learning management system (Canvas)
+2. Ability to access RStudio on your personal computer or using USAO computers.
+3. Ability to securely store and access files on cloud storage (such as OneDrive through your USAO account) during and after class. It is your responsibility to store files securely so you can access them in and out of class. 
+
+
+## Learning Outcomes
+
+By the end of this course, you will be able to:
+
+1. Apply the basics of data visualization in creating effective plots in R.
+2. Use ggplot2 to create custom plots.
+3. Communicate data-driven findings.
+4. Identify the weaknesses of widely-used plots and why to avoid them.
+
+
+# Course Format
+
+This course will meet IN-PERSON Monday and Wednesdays. **In-person attendance is required.** Only in special pre-arranged cases will attendance on Zoom be accommodated. In these cases, please email me pregier@usao.edu to discuss this ASAP.
+
+Your active engagement in class is crucial for your success in this course. To develop the understanding and skills required in this course, **your sustained and uninterrupted focus will be required.** Due to this, as well as my genuine concern for your learning, any reoccurring interruptions or distractions will be discussed, addressed, and eliminated to any extent necessary.
+
+# Assessement
+
+Course grades are made up of the following components:
+
+---------------                     --------------  
+Reading/Video Quizzes               15%
+Weekly Homework                     40%  
+Exams (two midterm and a final)     15% x 3 
+**Total**                           **100%**
+---------------                     --------------
+
+After rounding final grade to the nearest percent:  
+$A = 90-100\%, B = 80-89\%, C = 70-79\%, D = 60-69\%, F = \text{below } 60\%$
+
+
+## Reading/Video Quizzes 
+
+Weekly quizzes will be assigned on Canvas based on assigned reading or videos. Quizzes for a section will be due Sunday, at 10 PM, prior to the week in which we begin covering that section. Before taking each quiz, you should read/watch the assigned material. You will have two attempts, and you will receive the score of your most recent attempt.
+
+
+## Weekly homework
+
+Weekly homework will be completed in RMarkdown and are due Friday, at 10 PM.
+
+* Unless in extreme circumstances, **late work will not be graded.** In order to learn the best in this class, staying on top of lab work and turning it in on time **is essential**.
+* Within two class periods following the lab due date, I will grade and provide feedback on labs to help improve your skill and accuracy in conducting statistical analysis, as well as allow you to self-evaluate whether you are meeting key learning benchmarks. For me to do this consistently and effectively, **Homework must be submitted to Canvas**. (Labs or exams that are emailed to me will not be graded.)
+
+The procedures for completing labs in RMarkdown will be covered during the first week of class. If you miss these classes, it is **your** responsibility to meet with a friend or me during office hours to learn these procedures.
+
+
+
+
+
+## Exams
+
+Exams will be using real world data in which you are to interpret data to provide effective data visualizations. Like labs, exams will be submitted on Canvas. *I will not grade exams that are late or are emailed to me.*
+
+
+# Course Communication
+
+Be aware and anticipate the following response times for the following
+types of correspondence:
+
+-   **Student --\> Instructor**: For emails to the instructor sent after
+    8 am on Monday but before noon on Friday, please allow 24 hrs
+    response time. Messages left after midday Friday may take up to 72
+    hrs. Holidays excluded. Messages sent via email generally will
+    receive quicker responses than messages sent in Canvas.
+-   **Instructor --\> Student**: Students are expected to check and be
+    aware of information sent via email and Canvas announcement posts
+    regularly and respond if needed following the same guidelines
+    described in the above item.
+-   **Student --\> Student**: When working with other students (e.g.
+    homework or group projects) students are advised to exchange contact
+    information of some sort, as well as check and read email/group
+    messages regularly.
+
+------------------------------------------------------------------------
+
+In all course communication with your instructor and classmates, please
+follow these net etiquette (netiquette) guidelines: [^1]
+
+[^1]: Partially adapted from [The Core Rules of
+    Netiquette.](http://www.albion.com/netiquette/corerules.html) Shea,
+    V. (1994). *Netiquette* (Online ed., pp. 32-45). San Francisco:
+    Albion Books.
+
+1.  **Remember the Human:** When communicating electronically, whether
+    through email, instant message, discussion post, text, or some other
+    method, practice the *Golden Rule*: Do unto others as you would have
+    others do unto you. Remember, your written words are read by real
+    people, all deserving of respectful communication. Consider the tone
+    of your emails and discussion posts and before you press "send" or
+    "submit" ask yourself, "Would I be okay with this if someone else
+    had written it?"
+2.  **Make yourself look good:** In all course communication with your
+    instructor and classmates, be professional and polite. One of the
+    great things about the virtual world is the lack of judgment
+    associated with your physical appearance, the sound of your voice,
+    or the clothes you wear. You will, however, be judged by the quality
+    of your writing, so keep the following tips in mind:
+    -   Always check for capitalization, spelling, grammar, and
+        punctuation errors.
+    -   Think about what you want to communicate and state it clearly.
+    -   Avoid slang and acronyms like ROTFL for "rolling on the floor
+        laughing."
+    -   Don't use ALL CAPS for entire sentences or posts, which denote
+        yelling at someone. Any form of attack or inappropriate response
+        within any form of communication with other students or faculty
+        is unacceptable and if done in a discussion post will be removed
+        immediately accompanied with a warning.
+    -   Be pleasant and polite.
+3.  **Respect other people's time and bandwidth:** Electronic
+    communication takes time: time to read and time in which to respond.
+    Most people today lead busy lives, just like you do, and don't have
+    time to read or respond to frivolous emails or discussion posts. As
+    a virtual world communicator, it is your responsibility to make sure
+    that the time spent reading your words isn't wasted. Make your
+    written communication meaningful and to the point, without
+    extraneous text or large attachments that may take forever to
+    download.
+
+# Other Information
+
+## Student Success Center (SSC)
+
+The Student Success Center (SSC) offers FREE individual tutoring, hosted in the top floor of Nash Library! See the [SSC website for hours and link for scheduling an appointment](https://usao.edu/academics/ssc.html). It is very helpful to come to tutoring appointments with specific questions or topics you want help with.
+
+
+## Illness
+
+Regular class attendance is necessary in achieving the course objectives. Thus, taking care of your health and avoiding unnecessary exposure to illness is an important part of your success.
+
+However, if you do fall ill for any reason, I want you to be able to rest. Please do not come to class if you are sick. **If you are ill, please email me to let me know. Then, when you are well, contact me ASAP to make plans for making up missed work.**
+
+If you are absent from class, you are still responsible to complete all course requirements. As the instructor, I will work with you to make up work. However, **it is your responsibility to contact me to make plans** for making up missed work as soon as you are well. **Do not wait until the end of the semester to make up missed work.**
+
+
+## Disability Services
+
+The University has a continuing commitment to providing accommodations for students with documented disabilities. Like so many things this Fall, the need for accommodations and the process for arranging them may be altered by safety protocols related to COVID-19. To fully participate in this class, those with disabilities who may need accommodation should contact the Disability Services, as soon as possible. For this semester, please do this by emailing the Disability Services Office at disabilityservices@usao.edu.
+
+## Academic Dishonesty
+
+Academic dishonesty in any form is a violation of the Academic Code of Conduct and will not be tolerated. There is a zero-tolerance policy in this course for any form of plagiarism, fabrication, cheating, forgery, or any other type of academic dishonesty. For more on the Academic Code of Conduct please see the [USAO student handbook](https://usao.edu/student-life/images-docs/student-handbook-2019-20.pdf).
+
+
+## Important Dates
+
+Please also mark your calendar with all exam dates, as posted in the
+course schedule (see home Canvas page).
+
+It is your responsibility to be aware of all dates listed in the [USAO
+academic calendar](https://usao.edu/academics/academic-calendar.html).
+
+## Course Changes
+
+The instructor reserves the right to make changes to this course as deemed mutually beneficial or necessary to all involved, with appropriate notification.
+
+I encourage **any feedback you have** at any point during the semester. If you find any structural or content errors in any current course materials, let me know respectfully via the syllabus discussion in Canvas, via email, or in person. If you do so, I will give two points extra credit (per correction) toward Reading Quizzes.
