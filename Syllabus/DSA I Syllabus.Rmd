@@ -1,9 +1,9 @@
 ---
-title: "CSCI 3143 - Data Structures"
+title: "CSCI 3143 - Data Structures and Algorithms I"
 subtitle: Fall 2025
 output:
   word_document:
-    toc: true
+    toc: false
   html_document:
     number_sections: true
     theme: spacelab
@@ -38,7 +38,7 @@ options(knitr.kable.NA = '')
 
 # Course Description
 
-Study of fundamental data structures—including arrays, stacks, queues, linked lists, hash tables, trees, heaps, and graphs—and their applications. Emphasis is placed on algorithm design and analysis, including Big-O notation, time and space complexity, recursion, and trade-offs in performance and memory usage. Students will implement and evaluate algorithms for searching, sorting, and manipulating data structures on existing systems. (3 hours)  
+This course introduces fundamental data structures and the foundations of algorithmic problem solving. Students will study linear and introductory non-linear structures, focusing on their design, implementation, and application in solving computational problems. Core algorithm analysis concepts are introduced, including Big O notation for evaluating time and space complexity. Emphasis is placed on writing efficient code and comparing trade-offs among data structures. By the end of the course, students will be able to select and implement appropriate data structures for common programming tasks and analyze their efficiency. (3 hours)  
 
 **Prerequisite:** CSCI 3253 - Programming in Python II
 
@@ -58,35 +58,17 @@ Study of fundamental data structures—including arrays, stacks, queues, linked 
 3. Ability to securely store and access files on cloud storage (such as OneDrive through your USAO account) during and after class. It is your responsibility to store files securely so you can access them in and out of class. 
 
 
-## Learning Outcomes
+## Topics Covered
 
-By the end of this course, you will be able to:
+- **Algorithm Analysis:** Time and space complexity, Big O notation  
+- **Linear Data Structures:** Arrays, Linked Lists, Stacks, and Queues  
+- **Recursion**  
+- **Basic Sorting:** Bubble sort, Selection sort, Insertion sort, Merge sort, Quick sort  
+- **Basic Searching:** Linear search, Binary search  
+- **Introduction to Non-linear Data Structures:** Binary trees, Binary search trees, Heaps  
+- **Tree Traversals:** Breadth-first search (BFS), Depth-first search (DFS)  
 
 
-1. **Conceptual Understanding**  
-    - Explain the purpose, structure, and use cases for arrays, stacks, queues, linked lists, hash tables, trees, heaps, and graphs.  
-    - Compare the strengths, limitations, and typical applications of different data structures.  
-    - Describe and apply the concepts of recursion, divide-and-conquer, and iterative algorithm design.  
-
-2. **Algorithm Analysis**  
-    - Analyze algorithms using Big-O, Big-$\Theta$, and Big-$\Omega$ notation for time and space complexity.  
-    - Evaluate trade-offs between time complexity, memory usage, and implementation simplicity.  
-    - Determine the best choice of data structure for a given problem based on performance considerations.  
-
-3. **Implementation Skills**  
-    - Implement fundamental data structures (e.g., stacks, queues, linked lists, binary trees, heaps, hash tables, graphs) from scratch.  
-    - Implement common algorithms for searching (linear, binary, depth-first, breadth-first) and sorting (selection, insertion, merge, quick, heap sort).  
-    - Use recursion effectively to solve problems such as tree traversals, graph searches, and divide-and-conquer sorting.  
-
-4. **Application and Problem-Solving**  
-    - Select appropriate data structures and algorithms to solve real-world computational problems.  
-    - Modify and optimize existing implementations to improve performance or reduce memory footprint.  
-    - Debug, test, and validate implementations for correctness and efficiency.  
-
-5. **Software Development Practices**  
-    - Apply modular programming principles to structure code for clarity and reuse.  
-    - Use version control to manage iterative improvements in algorithm and data structure implementations.  
-    - Document algorithms and data structures clearly, including performance considerations and design decisions.  
 
 # Course Format
 

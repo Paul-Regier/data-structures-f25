@@ -1,0 +1,4 @@
+
+git rm -r --cached .venv
+git add .gitignore
+git commit -m "Cleanup: ignore venv, checkpoints, and cache files"

@@ -1,9 +1,9 @@
 ---
-title: "CSCI 3143 - Data Structures"
-subtitle: Fall 2025
+title: "CSCI 4153 - Data Structures and Algorithms II"
+subtitle: Spring 2026
 output:
   word_document:
-    toc: true
+    toc: false
   html_document:
     number_sections: true
     theme: spacelab
@@ -38,9 +38,9 @@ options(knitr.kable.NA = '')
 
 # Course Description
 
-Study of fundamental data structures—including arrays, stacks, queues, linked lists, hash tables, trees, heaps, and graphs—and their applications. Emphasis is placed on algorithm design and analysis, including Big-O notation, time and space complexity, recursion, and trade-offs in performance and memory usage. Students will implement and evaluate algorithms for searching, sorting, and manipulating data structures on existing systems. (3 hours)  
+This course builds on the foundations of Data Structures and Algorithms I, focusing on advanced data structures and algorithmic strategies. Students will explore balanced trees, advanced graph algorithms, and sophisticated sorting and searching techniques. Core algorithm design paradigms such as divide-and-conquer, greedy algorithms, and dynamic programming are studied in depth, alongside applications in optimization and problem solving. Topics also include advanced hash tables, tries, and non-comparison-based sorting algorithms. Emphasis is placed on analyzing algorithmic efficiency, understanding trade-offs in design, and applying advanced methods to complex computational problems. By the end of the course, students will be able to design, analyze, and implement efficient algorithms for a wide range of applications. (3 hours)  
 
-**Prerequisite:** CSCI 3253 - Programming in Python II
+**Prerequisite:** CSCI 3141 - Data Structures and Algorithms I
 
 ## Materials
 
@@ -58,35 +58,16 @@ Study of fundamental data structures—including arrays, stacks, queues, linked 
 3. Ability to securely store and access files on cloud storage (such as OneDrive through your USAO account) during and after class. It is your responsibility to store files securely so you can access them in and out of class. 
 
 
-## Learning Outcomes
+## Topics Covered
 
-By the end of this course, you will be able to:
+- **Hash Tables:** Hashing and collision resolution  
+- **Advanced Recursion and Backtracking**  
+- **Balanced Trees:** AVL trees, Red-Black trees, Tries  
+- **Advanced Sorting:** Heap sort, Counting sort, Radix sort, Bucket sort  
+- **Graph Algorithms:** Dijkstra’s, Prim’s, Kruskal’s, Bellman-Ford, Floyd-Warshall  
+- **Algorithmic Paradigms:** Divide-and-conquer, Greedy algorithms, Dynamic programming  
+- **Bit Manipulation (optional)**  
 
-
-1. **Conceptual Understanding**  
-    - Explain the purpose, structure, and use cases for arrays, stacks, queues, linked lists, hash tables, trees, heaps, and graphs.  
-    - Compare the strengths, limitations, and typical applications of different data structures.  
-    - Describe and apply the concepts of recursion, divide-and-conquer, and iterative algorithm design.  
-
-2. **Algorithm Analysis**  
-    - Analyze algorithms using Big-O, Big-$\Theta$, and Big-$\Omega$ notation for time and space complexity.  
-    - Evaluate trade-offs between time complexity, memory usage, and implementation simplicity.  
-    - Determine the best choice of data structure for a given problem based on performance considerations.  
-
-3. **Implementation Skills**  
-    - Implement fundamental data structures (e.g., stacks, queues, linked lists, binary trees, heaps, hash tables, graphs) from scratch.  
-    - Implement common algorithms for searching (linear, binary, depth-first, breadth-first) and sorting (selection, insertion, merge, quick, heap sort).  
-    - Use recursion effectively to solve problems such as tree traversals, graph searches, and divide-and-conquer sorting.  
-
-4. **Application and Problem-Solving**  
-    - Select appropriate data structures and algorithms to solve real-world computational problems.  
-    - Modify and optimize existing implementations to improve performance or reduce memory footprint.  
-    - Debug, test, and validate implementations for correctness and efficiency.  
-
-5. **Software Development Practices**  
-    - Apply modular programming principles to structure code for clarity and reuse.  
-    - Use version control to manage iterative improvements in algorithm and data structure implementations.  
-    - Document algorithms and data structures clearly, including performance considerations and design decisions.  
 
 # Course Format
 

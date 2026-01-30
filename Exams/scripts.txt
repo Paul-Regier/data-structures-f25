@@ -1,0 +1,12 @@
+To activate venv for for my local venv:
+
+Powershell:
+C:\venvs\data_structures_F25\Scripts\Activate.ps1
+
+.venv\Scripts\Activate.ps1
+
+TO download:
+pip install matplotlib
+
+To confirm installation:
+pip show matplotlib

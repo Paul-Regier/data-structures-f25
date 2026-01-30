@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>lab01-setup</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CSCI3143_Final_Exam_STUDENT</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7511,104 +7511,190 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=10833aef">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=49263011">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="CSCI-3134-%E2%80%93-Data-Structures">CSCI 3134 – Data Structures<a class="anchor-link" href="#CSCI-3134-%E2%80%93-Data-Structures">¶</a></h1><h2 id="Lab-0:-Programming-Environment-Setup-and-VS-Code-Basics">Lab 0: Programming Environment Setup and VS Code Basics<a class="anchor-link" href="#Lab-0:-Programming-Environment-Setup-and-VS-Code-Basics">¶</a></h2><p><strong>Name:</strong>________
-<strong>Date:</strong> {date.today()}</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=78e41427">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">msg</span> <span class="o">=</span> <span class="s2">"Hello World"</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Hello World
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7e128fdb">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">importlib.util</span><span class="o">,</span><span class="w"> </span><span class="nn">platform</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Python executable:'</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Python version:'</span><span class="p">,</span> <span class="n">platform</span><span class="o">.</span><span class="n">python_version</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Platform:'</span><span class="p">,</span> <span class="n">platform</span><span class="o">.</span><span class="n">platform</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Venv in path?'</span><span class="p">,</span> <span class="s1">'venvs'</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">has_module</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="n">spec</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">find_spec</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">spec</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'ipykernel installed:'</span><span class="p">,</span> <span class="n">has_module</span><span class="p">(</span><span class="s1">'ipykernel'</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'jupyter installed:'</span><span class="p">,</span> <span class="n">has_module</span><span class="p">(</span><span class="s1">'jupyter'</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'black installed:'</span><span class="p">,</span> <span class="n">has_module</span><span class="p">(</span><span class="s1">'black'</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'ruff installed:'</span><span class="p">,</span> <span class="n">has_module</span><span class="p">(</span><span class="s1">'ruff'</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Python executable: c:\Users\paulr\Dropbox\aUSAO\- CSCI 3143 Data Structures\.venv\Scripts\python.exe
-Python version: 3.12.10
-Platform: Windows-11-10.0.26100-SP0
-Venv in path? False
-ipykernel installed: True
-jupyter installed: True
-black installed: True
-ruff installed: True
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d4b88a7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h2><ol>
-<li>What do you think of VS Code so far?</li>
-<li>Why is VS Code one of the leading IDE?</li>
-<li>What is a virtual environment (venv)? What is the purpose of setting one up?</li>
+<h1 id="CSCI-3143-%E2%80%94-Take-Home-Final-Exam">CSCI 3143 — Take-Home Final Exam<a class="anchor-link" href="#CSCI-3143-%E2%80%94-Take-Home-Final-Exam">¶</a></h1><p><strong>Instructions:</strong></p>
+<ol>
+<li>Choose any three of the following six to implement.</li>
+<li>Each problem is designed to take ~1–2 hours if done carefully, so plan your time wisely.</li>
+<li>Write <strong>clean, working Python code</strong> addressing each problem requirement.</li>
+<li>Write a short written explanation (~5–7 sentences) of your approach for each problem you choose.</li>
+<li>Submit exported HTML of your work, clearly marking which problems you implemented.</li>
 </ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c37e2be0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="1.-Extend-the-Hash-Table-with-Linear-Probing">1. Extend the Hash Table with Linear Probing<a class="anchor-link" href="#1.-Extend-the-Hash-Table-with-Linear-Probing">¶</a></h2><p>Using your Lab 8 hash table implementation as a starting point, implement <code>put</code>, <code>get</code>, and <code>delete</code> for a linear-probing hash table.</p>
+<p>Your code must:</p>
+<ul>
+<li>resize when the load factor becomes too large (or too small)</li>
+<li>correctly handle <strong>tombstones,</strong> or special markers used in hash tables to indicate a slot where an element was deleted (or lazy deletion).<ul>
+<li>Without tombstones, deleting an element would break the linear probe sequence.</li>
+<li>A search for a colliding element that was placed after the deleted one would incorrectly stop at the now-empty slot</li>
+</ul>
+</li>
+<li>preserve the ability to find future keys</li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li><code>put(key)</code></li>
+<li><code>get(key)</code></li>
+<li><code>delete(key)</code> implementation</li>
+<li>Explanation of how tombstones avoid breaking search</li>
+<li>A test suite demonstrating:<ul>
+<li>insert several keys</li>
+<li>delete some</li>
+<li>verify that searching for still-present keys works</li>
+<li>verify that inserting after deletion handles tombstones correctly</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c1de52c9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="2.-Add-a-Height-or-Depth-Method-to-our-BinaryTree-Class">2. Add a Height or Depth Method to our BinaryTree Class<a class="anchor-link" href="#2.-Add-a-Height-or-Depth-Method-to-our-BinaryTree-Class">¶</a></h2><p>Using your <strong>BinaryTree</strong> class from Lab 9, add the following methods:</p>
+<ul>
+<li><code>height()</code> – returns the height of the tree</li>
+<li><code>depth(target_key)</code> – returns the depth of the node with that key (root is depth 0)</li>
+<li><code>is_ballanced()</code> - returns if a subtree is ballanced.</li>
+</ul>
+<p>Do <strong>not</strong> assume your tree is balanced.</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li><code>height()</code> implemented recursively</li>
+<li><code>depth(target_key)</code> implemented recursively</li>
+<li><code>is_ballanced()</code></li>
+<li>Short analysis of:<ul>
+<li>Worst-case time complexity</li>
+<li>Why recursion fits tree-shaped data</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12cbb6b5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="3.-Deleting-on-Binary-Tree">3. Deleting on Binary Tree<a class="anchor-link" href="#3.-Deleting-on-Binary-Tree">¶</a></h2><p>Along with, <code>insert</code> and <code>search</code>, implment a <code>delete</code> method of our <code>BasicBST</code> (from Lab 11).</p>
+<p>Your <code>delete</code> method should:</p>
+<ul>
+<li>take <code>key</code> and return <code>True</code> if the key was deleted, <code>False</code> otherwise.</li>
+<li>if the <code>key</code> was removed, replace that key with appropriate element to ensure that the ordering property is kept.</li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li><code>insert()</code></li>
+<li><code>search(target_key)</code></li>
+<li><code>delete(target_key)</code></li>
+<li>A test suite demonstrating:<ul>
+<li>insert several keys</li>
+<li>delete some</li>
+<li>verify that ordering property is kept</li>
+<li>verify that searching for both not-present and still-present keys works</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=586f53fd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="4.-Heap-Extension:-k-Way-Merge-Using-Your-Min-Heap">4. Heap Extension: k-Way Merge Using Your Min-Heap<a class="anchor-link" href="#4.-Heap-Extension:-k-Way-Merge-Using-Your-Min-Heap">¶</a></h2><p>Extend the <strong>BinaryMinHeap</strong> from your heap lab as follows.</p>
+<p>You are given <strong>k sorted lists</strong> (like in external merge sort or streaming logs).</p>
+<p>Write a function:</p>
+<div class="highlight"><pre><span></span><span class="n">merge_k_sorted</span><span class="p">(</span><span class="n">lists</span><span class="p">)</span>
+</pre></div>
+<p>that merges all k lists into one sorted list <strong>using only your min-heap implementation</strong> (no <code>heapq</code>), and return the merged list.</p>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li>Working <code>merge_k_sorted</code> function</li>
+<li>Explanation of why this is <code>O(N log k)</code> (where N is the total number of elements)</li>
+<li>Tests on at least three lists of differing lengths</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=636078fa">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="5.-Trie-Enhancement:-Autocomplete-with-Frequency-Ranking">5. Trie Enhancement: Autocomplete with Frequency Ranking<a class="anchor-link" href="#5.-Trie-Enhancement:-Autocomplete-with-Frequency-Ranking">¶</a></h2><p>Using your Trie from Lab 13, modify the Trie to support:</p>
+<div class="highlight"><pre><span></span><span class="n">autocomplete</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+</pre></div>
+<p>which returns the <strong>top-k most frequent words</strong> beginning with a given prefix.</p>
+<p>You must:</p>
+<ul>
+<li>store a <code>frequency</code> count in each terminal node</li>
+<li>increment count on each <code>insert(word)</code></li>
+<li>traverse the subtree for matches</li>
+<li>return results sorted by frequency</li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li>Modified TrieNode with frequency counter</li>
+<li><code>autocomplete(prefix, k)</code> method</li>
+<li>Tests showing learned frequencies (e.g., from repeated inserts) produce correct ordering</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1227ae0e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="6.-Build-an-Expression-Evaluator-Using-Your-Parse-Tree">6. Build an Expression Evaluator Using Your Parse Tree<a class="anchor-link" href="#6.-Build-an-Expression-Evaluator-Using-Your-Parse-Tree">¶</a></h2><p>Using your <code>build_parse_tree</code> and evaluator from Lab 9, extend your parse tree evaluator to support:</p>
+<ul>
+<li>multi-digit numbers</li>
+<li>unary minus (e.g., <code>-(3+4)</code>)</li>
+<li>exponentiation <code>^</code> (right-associative)</li>
+</ul>
+<p>You may tokenize the expression however you choose.</p>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li>Working tokenizer</li>
+<li>Updated parse-tree builder</li>
+<li>Updated evaluator</li>
+<li>Tests for expressions such as:<ul>
+<li><code>"-(3+4)*2"</code></li>
+<li><code>"2^(3^2)"</code></li>
+<li><code>"12 + 30/5 - 7"</code></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
